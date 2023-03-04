@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Financeiro</title>
+</head>
+<body>
+    
+    <div>
+        <center>
+        Local de Destino: <input id="input_destino"> <br>
+        Local de Origem: <input id="input_origem"> <br>
+        Modelo do container (20' standart, 40'standart): <input id="input_modelo"> <br>
+        Peso por container: <input id="input_peso"> <br>
+        Volume: <input id="input_volume"> <br>
+        <button onclick="calcule()">Simular</button>
+        </center>
+    </div>
+
+    <div>
+        <div id="div_concorrente1"></div>
+        <div id="div_concorrente2"> </div>
+        <div id="div_meu"></div>
+    </div>
+    
+</body>
+</html>
+
+<script>
+    function calcule() {
+        var destino = Number(input_destino.value);
+        var origem = Number(input_origem.value);
+        var modelo = input_modelo.value;
+        var peso = Number(input_peso.value);
+        var volume = Number(input_volume.value);
+
+        var wm = peso/valume
+        var total = (custo_aluguel + custo_manuseio + custo_manutncao) * wm
+        var custo_aluguel = num_conteiners * 15
+        var custo_manuseio = num_conteiners * 200
+        var custo_manutncao = num_conteiners * 15
+        var taxas_origem = 15  
+
+
+        div_concorrente1.innerHTML = `No Continers.com o seu frete ai fica ${total + (total / 100 * 25)}`;
+        div_concorrente2.innerHTML = `No BoxInportação o seu frete ai fica ${total + (total / 100 * 15)`;
+        div_meu.innerHTML = `Aqui na Oceanides é ${total}`;
+    }
+
+</script>
