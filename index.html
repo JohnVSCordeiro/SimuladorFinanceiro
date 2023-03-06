@@ -85,13 +85,15 @@
 
         var total = valor_frete + taxa_destino + taxas_origem;
 
-        var total_container15 = total + (total / 100 * 15);
+         total_container15 = total + (total / 100 * 15);
 
-        var total_container30 = total + (total / 100 * 30);
+        total_container30 = total + (total / 100 * 30);
 
-        var total_container45 = total + (total / 100 * 45);
+         total_container45 = total + (total / 100 * 45);
 
-        var total_container60 = total + (total / 100 * 60);
+         total_container60 = total + (total / 100 * 60);
+
+         
 
 
         if (modelo == 1) {
@@ -119,7 +121,7 @@
 
 
                 div_concorrente2.innerHTML =
-                    `No BoxInportação a impprtação do seu container fica US$:${total_container15}<br><br>`;
+                    `No BoxInportação a importação do seu container fica US$:${total_container15}<br><br>`;
 
 
 
@@ -136,7 +138,7 @@
 
 
                 div_concorrente2.innerHTML =
-                    `No BoxInportação a impprtação do seu container fica US$:${total_container30}<br>`;
+                    `No BoxInportação a importação do seu container fica US$:${total_container30}<br>`;
 
 
 
@@ -150,7 +152,7 @@
 
 
                 div_concorrente2.innerHTML =
-                    `No BoxInportação a impprtação do seu container fica US$:${total_container45}<br>`;
+                    `No BoxInportação a importação do seu container fica US$:${total_container45}<br>`;
 
 
 
@@ -164,48 +166,48 @@
 
             if (modelo == 1) {
                 div_concorrente1.innerHTML =
-                    `No Continers.com a importação do seu container fica US$:${total_container30 - total_container30 * 0.1 }<br>`
+                    `No Continers.com a importação do seu container fica US$:${total_container30 * 0.9 }<br>`
 
 
 
                 div_concorrente2.innerHTML =
-                    `No BoxInportação a impprtação do seu container fica US$:${total_container15 - total_container15 * 0.1}<br>`;
+                    `No BoxInportação a importação do seu container fica US$:${total_container15 * 0.9}<br>`;
 
 
 
                 div_meu.innerHTML =
-                    `Aqui na Oceanides a importação do seu container fica US$: ${total - total * 0.1}<br>`;
+                    `Aqui na Oceanides a importação do seu container fica US$: ${total * 0.9}<br>`;
 
 
             }
 
             if (modelo == 2) {
                 div_concorrente1.innerHTML =
-                    `No Continers.com a importação do seu container fica US$:${total_container45 - total_container45 * 0.1}<br>`;
+                    `No Continers.com a importação do seu container fica US$:${total_container45 * 0.9}<br>`;
 
 
 
                 div_concorrente2.innerHTML =
-                    `No BoxInportação a impprtação do seu container fica US$:${total_container30 - total_container30 * 0.1}<br>`;
+                    `No BoxInportação a importação do seu container fica US$:${ total_container30 * 0.9}<br>`;
 
 
 
                 div_meu.innerHTML =
-                    `Aqui na Oceanides a importação do seu container fica US$:${total_container15 - total_container15 * 0.1}<br>`;
+                    `Aqui na Oceanides a importação do seu container fica US$:${ total_container15 * 0.9}<br>`;
             }
             if (modelo == 3) {
                 div_concorrente1.innerHTML =
-                    `No Continers.com a importação do seu container fica US$:${total_container60 - total_container60 * 0.1}<br>`;
+                    `No Continers.com a importação do seu container fica US$:${ total_container60 * 0.9}<br>`;
 
 
 
                 div_concorrente2.innerHTML =
-                    `No BoxInportação a impprtação do seu container fica US$:${total_container45 - total_container45 * 0.1}<br>`;
+                    `No BoxInportação a importação do seu container fica US$:${ total_container45 * 0.9}<br>`;
 
 
 
                 div_meu.innerHTML =
-                    `Aqui na Oceanides a importação do seu container fica US$:${total_container30 - total_container30 * 0.1}<br>`;
+                    `Aqui na Oceanides a importação do seu container fica US$:${total_container30 * 0.9}<br>`;
 
 
 
@@ -216,48 +218,48 @@
 
                 if (modelo == 1) {
                     div_concorrente1.innerHTML =
-                        `No Continers.com a importação do seu container fica US$:${total_container30 - total_container30 * 0.2 }<br>`;
+                        `No Continers.com a importação do seu container fica US$:${total_container30 * 0.8 }<br>`;
 
 
 
                     div_concorrente2.innerHTML =
-                        `No BoxInportação a impprtação do seu container fica US$:${total_container45 - total_container45 * 0.2}<br>`;
+                        `No BoxInportação a importação do seu container fica US$:${ total_container45 * 0.8}<br>`;
 
 
 
                     div_meu.innerHTML =
-                        `Aqui na Oceanides a importação do seu container fica US$:${total_container15 - total_container15 * 0.2}<br>`;
+                        `Aqui na Oceanides a importação do seu container fica US$:${ total_container15 * 0.8}<br>`;
 
 
                 }
 
                 if (modelo == 2) {
                     div_concorrente1.innerHTML =
-                        `No Continers.com a importação do seu container fica US$:${total_container45 - total_container45 * 0.2}<br>`;
+                        `No Continers.com a importação do seu container fica US$:${ total_container45 * 0.8}<br>`;
 
 
 
                     div_concorrente2.innerHTML =
-                        `No BoxInportação a impprtação do seu container fica US$:${total_container30 - total_container30 * 0.2}<br>`;
+                        `No BoxInportação a importação do seu container fica US$:${total_container30 * 0.8}<br>`;
 
 
 
                     div_meu.innerHTML =
-                        `Aqui na Oceanides a importação do seu container fica US$:${total_container15 - total_container15 * 0.2}<br>`;
+                        `Aqui na Oceanides a importação do seu container fica US$:${total_container15 * 0.8}<br>`;
                 }
                 if (modelo == 3) {
                     div_concorrente1.innerHTML =
-                        `No Continers.com a importação do seu container fica US$:${total_container60 - total_container60 * 0.2}<br>`;
+                        `No Continers.com a importação do seu container fica US$:${ total_container60 * 0.8}<br>`;
 
 
 
                     div_concorrente2.innerHTML =
-                        `No BoxInportação a impprtação do seu container fica US$:${total_container45 - total_container45 * 0.2}<br>`;
+                        `No BoxInportação a imprtação do seu container fica US$:${ total_container45 * 0.8}<br>`;
 
 
 
                     div_meu.innerHTML =
-                        `Aqui na Oceanides a importação do seu container fica US$:${total_container30 - total_container30 * 0.2}<br>`;
+                        `Aqui na Oceanides a importação do seu container fica US$:${total_container30 * 0.8}<br>`;
 
                 }
             }
